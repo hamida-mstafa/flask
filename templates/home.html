@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {%for post in posts%}
+        <h1>{{post.name}}</h1>
+        <p>Read {{post.book}} on {{post.date}}</p>
+        <p>{{post.content}}</p>
+    {%endfor%}  
+{% endblock content %}
